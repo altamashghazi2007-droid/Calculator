@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stylish Calculator (Design Only)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="calc" role="application" aria-label="Calculator">
+        <div class="calc__top">
+            <div class="calc__brand">Simple Calculator</div>
+            <div class="calc__mode">Standard</div>
+        </div>
+
+        <div class="calc__display" aria-live="polite">
+            <input type="text" class="input_taker" readonly placeholder="0">
+            <div class="calc__value">0</div>
+        </div>
+
+        <div class="calc__keys">
+            <button onclick="clearDisplay()" class="key key--danger">C</button>
+            <button onclick="sqrt()" class="key">√</button>
+            <button onclick="append(' ** ')" class="key"> % </button>
+            <button onclick="append(' / ')" class="key key--operator"> ÷ </button>
+
+            <button onclick="append('7')" class="key">7</button>
+            <button onclick="append('8')" class="key">8</button>
+            <button onclick="append('9')" class="key">9</button>
+            <button onclick="append(' * ')" class="key key--operator"> × </button>
+
+            <button onclick="append('4')" class="key">4</button>
+            <button onclick="append('5')" class="key">5</button>
+            <button onclick="append('6')" class="key">6</button>
+            <button onclick="append(' - ')" class="key key--operator"> − </button>
+
+            <button onclick="append('1')" class="key">1</button>
+            <button onclick="append('2')" class="key">2</button>
+            <button onclick="append('3')" class="key">3</button>
+            <button onclick="append(' + ')" class="key key--operator"> + </button>
+
+            <button onclick="append('0')" class="key key--wide">0</button>
+            <button onclick="append('.')" class="key">.</button>
+            <button onclick="calculate()" class="key key--accent">=</button>
+        </div>
+
+        <div class="calc__credits">Designed with 🧡 by Johnathon</div>
+    </div>
+
+   <script src="script.js"></script>
+
+</body>
+
+</html>
